@@ -34,6 +34,7 @@ const LogSchema = new Schema<ILog>({
 
 const LogModel = mongoose.model<ILog>("Log", LogSchema);
 
+// Process raw chunks into JSON objects
 class LogParserStream extends Transform {
   private buffer: string = "";
 
