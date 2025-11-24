@@ -31,7 +31,7 @@ function generateLog(): LogEntry {
   };
 }
 
-setInterval(async () => {
+const sendLog = async () => {
   const log = generateLog();
 
   try {
@@ -40,4 +40,10 @@ setInterval(async () => {
   } catch (e) {
     console.error("Cascade Server unreachable");
   }
-}, 100);
+
+  // Random delay between 50ms and 500ms
+  const delay = Math.floor(Math.random() * 450) + 50;
+  setTimeout(sendLog, delay);
+};
+
+sendLog();
