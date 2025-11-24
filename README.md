@@ -54,6 +54,7 @@ npm install
 You will need **three terminal windows** open to run the full stack.
 
 **Terminal 1: Database & Backend**
+
 First, make sure MongoDB is running.
 
 - **Mac:** `brew services start mongodb-community`
@@ -69,6 +70,7 @@ npx ts-node src/server.ts
 Expect output: `Cascade Ingestor running on :3001` & `MongoDB Connected to Cascade`
 
 **Terminal 2: Frontend Dashboard**
+
 Start the React development server:
 
 ```bash
@@ -79,6 +81,7 @@ npm run dev
 Open your browser to the URL shown (usually `http://localhost:5173`). You should see the empty dashboard.
 
 **Terminal 3: Traffic Generator**
+
 Start the dummy log generator to simulate traffic:
 
 ```bash
