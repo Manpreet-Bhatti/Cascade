@@ -1,6 +1,6 @@
 # 🌊 Cascade: Distributed Log Visualizer
 
-A real-time log aggregation and visualization dashboard. It simulates a distributed system where multiple microservices stream logs to a central "ingestor" service, which then pipes data to a React dashboard via WebSockets for live traffic monitoring.
+Cascade simulates a distributed system where multiple microservices stream logs to a central "ingestor" service, which then pipes data to a React dashboard via WebSockets for live traffic monitoring.
 
 ## 🚀 Features
 
